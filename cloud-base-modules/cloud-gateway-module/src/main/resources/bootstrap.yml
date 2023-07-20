@@ -1,0 +1,12 @@
+spring:
+    cloud:
+        nacos:
+            server-addr: 192.168.5.41:8848
+            discovery:
+              namespace: fairyspace
+            config:
+                namespace: fairyspace
+                shared-configs:
+                  - data-id: gateway-router.json
+                    group: DEFAULT_GROUP
+                    refresh: true

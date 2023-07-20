@@ -1,0 +1,11 @@
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+nacos:
+    gateway:
+        route:
+            config:
+                data-id: gateway-router
+                group: DEFAULT_GROUP
